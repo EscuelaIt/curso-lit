@@ -9,23 +9,28 @@
 <body>
     <h1>Lit.dev</h1>
 
-    <eit-counter
+    <!-- <eit-counter
         id="counter"
-        counter="0"
+        counter="5000"
     >
         <h2><a href="https://escuela.it">Contador!!!!!</a></h2>
-    </eit-counter>
-
+    </eit-counter> 
+    
     <button id="reset">Reset</button>
 
-    <script src="./components/eit-counter.js" type="module"></script>
+    -->
+
+    <eit-switch checked></eit-switch>
+
+
+    <script src="./components/index.js" type="module"></script>
     <script>
-        document.getElementById('reset').addEventListener('click', function() {
-            document.getElementById('counter').counter = 0;
-            const counter = document.createElement('eit-counter');
-            counter.setAttribute('quantity', 1000);
-            document.body.appendChild(counter);
-        });
+        // document.getElementById('reset').addEventListener('click', function() {
+        //     document.getElementById('counter').counter = 0;
+        //     const counter = document.createElement('eit-counter');
+        //     counter.setAttribute('quantity', 1000);
+        //     document.body.appendChild(counter);
+        // });
     </script>
 </body>
 </html>
