@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit en EscuelaIT</title>
+
+    <style>
+        html {
+            --eit-switch-off-state-color: #eee;
+            --eit-switch-on-state-color: #8f8;
+            --eit-switch-bar-color: #aac;
+        }
+        p {
+            margin: 0;
+            color: blue;
+        }
+        li {
+            border: 5px solid orange;
+        }
+        footer {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lit.dev</h1>
+
+    <!-- <eit-counter
+        id="counter"
+        counter="5000"
+    >
+        <h2><a href="https://escuela.it">Contador!!!!!</a></h2>
+    </eit-counter> 
+    
+    <button id="reset">Reset</button>
+
+    -->
+
+    <eit-card>
+        <p>Siempre va a ser light DOM!!!!</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div slot="actions">
+            <a href="#">Accion 1</a>
+            <eit-switch></eit-switch>
+        </div>
+    </eit-card>
+
+    <eit-switch checked></eit-switch>
+    <eit-page-links></eit-page-links>
+    <br>
+    <eit-page-links-numpages numPages="05" selectedPage="1"></eit-page-links-numpages>
+
+
+    <footer>esto es un footer</footer>
+
+    <script src="./components/index.js" type="module"></script>
+    <script>
+        // document.getElementById('reset').addEventListener('click', function() {
+        //     document.getElementById('counter').counter = 0;
+        //     const counter = document.createElement('eit-counter');
+        //     counter.setAttribute('quantity', 1000);
+        //     document.body.appendChild(counter);
+        // });
+    </script>
+</body>
+</html>
