@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit en EscuelaIT</title>
+
+    <style>
+       
+       eit-page-switch {
+           border: 3px solid red;
+       }
+       eit-page-switch[active] {
+        border: 3px solid blue;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Lit.dev</h1>
+
+    <eit-page-switch active page="uno" id="intercambiador"></eit-page-switch>
+
+    <!-- <eit-page-links pages="[1,4,8]" selectedPage="4" id="elem"></eit-page-links>
+        -->
+    <button>cambiar pagina</button> 
+    <script src="./components/index.js" type="module"></script>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            //document.getElementById('elem').setPage(8);
+            let intercambiador = document.getElementById('intercambiador');
+            console.log('atributo', intercambiador.getAttribute('page'));
+            console.log('propiedad', intercambiador.page);
+        })
+    </script>
+</body>
+</html>
