@@ -45,7 +45,10 @@ export class EitCounter extends LitElement {
     static properties = {
         counter: { 
             type: Number,
-            reflect: true
+            reflect: true,
+            hasChanged: (newValue, oldValue) => {
+                return newValue % 5 === 0;
+            }
         },
         quantity: { type: Number, },
     }
@@ -54,6 +57,10 @@ export class EitCounter extends LitElement {
         super();
         this.counter = 10;
         this.quantity = 10;
+    }
+
+    updated() {
+        console.log('han cambiado los valores');
     }
 
     render() {
