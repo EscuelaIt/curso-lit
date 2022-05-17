@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit en EscuelaIT</title>
+
+    <style>
+        .menu p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lit.dev</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, at voluptate. Illum fuga quos nisi saepe, dolore eos accusantium voluptatum dignissimos earum rerum dolores voluptatibus ipsa exercitationem id sapiente pariatur?</p>
+    <eit-menu-overlay>
+        <span slot="trigger">Abre el menú</span>
+        <div class="menu" slot="menu">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iusto blanditiis. Quas ad numquam doloribus nisi dolorum at dignissimos, optio velit repellendus ab quis cumque similique hic aspernatur facilis sequi!
+            </p>
+        </div>
+    </eit-menu-overlay>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis commodi ducimus labore repellendus blanditiis explicabo veniam accusamus. Quaerat, quibusdam. Assumenda ut at ratione numquam soluta asperiores unde voluptas vero!</p>
+    
+    <!-- <eit-show-click x="100" y="300"></eit-show-click> -->
+    
+    <script src="./components/index.js" type="module"></script>
+    <button>quitar elemento</button>
+    <hr>
+    <form action="http://php-sandbox.test/recibir.php" method="post">
+        <dw-input-checkbox name="elinputcheckbox"></dw-input-checkbox>
+        <p><button>enviar</button></p>
+    </form>
+    <hr>
+
+    <eit-counter quantity="1"></eit-counter>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let menu = document.createElement('eit-menu-overlay');
+
+        document.querySelector('button').addEventListener('click', function() {
+            console.log(this);
+            this.remove();
+            document.querySelector('eit-show-click').remove();
+        })
+    });
+    </script>
+</body>
+</html>
