@@ -7,3 +7,6 @@ import './eit-page-switch';
 import './eit-menu-overlay';
 import './eit-show-click';
 import './dw-input-checkbox';
+import './eit-clock';
+import './user-list';
+import './user-list-optimized';

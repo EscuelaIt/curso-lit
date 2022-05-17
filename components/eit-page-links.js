@@ -43,9 +43,15 @@ export class EitPageLinks extends LitElement {
                     >${page}</li>
                 `)}
             </ul>
-            ${this.selectedPage}
+
+            <!-- <button @click="${this.changeSomething}">cambiar</button> -->
         `;
     }
+
+    // changeSomething() {
+    //     this.pages[0] = 'cambiado';
+    //     this.pages = [...this.pages];
+    // }
 
     setPage(page) {
         this.selectedPage = page;

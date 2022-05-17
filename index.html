@@ -10,24 +10,26 @@
         .menu p {
             margin: 0;
         }
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     </style>
 </head>
 <body>
     <h1>Lit.dev</h1>
     
-    
+    <eit-clock></eit-clock>
+
+    <div>
+        <user-list></user-list>
+        <user-list-optimized></user-list-optimized>
+    </div>
+
     <script src="./components/index.js" type="module"></script>
     
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let menu = document.createElement('eit-menu-overlay');
-
-        document.querySelector('button').addEventListener('click', function() {
-            console.log(this);
-            this.remove();
-            document.querySelector('eit-show-click').remove();
-        })
-    });
+    
     </script>
 </body>
 </html>
