@@ -15,17 +15,27 @@
 <body>
     <h1>Lit.dev</h1>
     
-    <div>
+    <div style="text-align: center;">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, quisquam. Earum quaerat dolorum eligendi temporibus accusamus quis eius, labore enim. Vero quae reiciendis assumenda harum est vitae enim vel! Commodi.</p>
-        <eit-info-overlay horizontalAlign="left" moveleft="40">
-            Esto es la información
+        dxgcfgch gh vg hghjghjghjgh kjghjkhjkhjkdf gdfghfhfgjhd 
+        <eit-info-overlay id="o1" horizontalAlign="left" verticalAlign="top" moveTop="-15">
+            <form id="f1">
+                <input type="text" name="name" placeholder="Nameeeee">
+                <button>Enviar</button>
+             </form>
         </eit-info-overlay>
     </div>
+
+    <overlay-form></overlay-form>
 
     <script src="./components/index.js" type="module"></script>
     
     <script>
-    
+    document.getElementById('f1').addEventListener('submit', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.getElementById('o1').close();
+    })
     </script>
 </body>
 </html>

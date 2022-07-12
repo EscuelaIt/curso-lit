@@ -16,7 +16,7 @@
     "@dile/dile-checkbox": "^2.1.0",
     "@dile/dile-input": "^1.1.0",
     "@dile/dile-pages": "^1.3.0",
-    "eit-info-overlay": "^0.0.1",
+    "eit-info-overlay": "^0.0.2",
     "lit": "^2.2.3",
     "wired-elements": "^3.0.0-rc.6"
   }

@@ -11,3 +11,4 @@ import './eit-clock';
 import './user-list';
 import './user-list-optimized';
 import 'eit-info-overlay/eit-info-overlay.js';
+import './overlay-form';
